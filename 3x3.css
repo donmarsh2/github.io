@@ -1,0 +1,163 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+	background-image: url(gaming-pattern.png);
+    font-size: 3rem;
+    width:100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+        "header header header" 5%
+        "...... ...... ......" 3%
+        "...... center ......" 1fr
+        "...... ...... ......" 5%
+        "footer footer footer" 5%
+        / auto 80% auto;
+}
+header {
+
+	text-align: center;
+	font-size: 2rem;
+    grid-area: header;
+    border: solid 1px black;
+    background-color: gray;
+}
+main {
+
+    grid-area: center;
+    align-self: center;
+    justify-self: center;
+    text-align: center
+}
+#table1 {
+	background-color: white;
+	border: 2px solid black;
+	width: 840px;
+	height: 840px;
+	text-align: center;
+	margin: 0 auto;
+}
+tr {
+}
+#table1 td {
+	border-collapse: separate;
+	border-spacing: 0px;
+	text-align: center;
+
+}
+textarea {
+	resize: none;
+	width: 280px;
+	height: 280px;
+	font-size: 3rem;
+	display: flex;
+	text-align: center;
+	font-family: 'Courier New','Meiryo UI';
+	padding: 0 0 0 0;
+}
+#a2 {
+	background-color: #e3f0fb;
+}
+#b1 {
+	background-color: #e3f0fb;
+}
+#b3 {
+	background-color: #e3f0fb;
+}
+#c2 {
+	background-color: #e3f0fb;
+}
+#table2 {
+	background-color: white;
+	border: 2px solid black;
+	width: 852px;
+	height: 840px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+}
+#table2 td {
+	border: solid 1px;
+	border-collapse: separate;
+	border-spacing: 0px;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	padding: 0 0 0 0;
+}
+canvas {
+	width: 280px;
+	height: 276px;
+	position: absolute;
+}
+#circlea1 {
+	left: 2px;
+	top: 2px;
+	position: absolute;
+}
+#circlea2 {
+	left: 284px;
+	top: 2px;
+	position: absolute;
+}
+#circlea3 {
+	left: 566px;
+	top: 2px;
+	position: absolute;
+}
+#circleb1 {
+	left: 2px;
+	top: 280px;
+	position: absolute;
+}
+#circleb2 {
+	left: 284px;
+	top: 280px;
+	position: absolute;
+}
+#circleb3 {
+	left: 566px;
+	top: 280px;
+	position: absolute;
+}
+#circlec1 {
+	left: 2px;
+	top: 558px;
+	position: absolute;
+}
+#circlec2 {
+	left: 284px;
+	top: 558px;
+	position: absolute;
+}
+#circlec3 {
+	left: 566px;
+	top: 558px;
+	position: absolute;
+}
+
+/*footer {
+    grid-area: footer;
+    border: solid 1px black;
+    background-color: gray;
+}
+*/
+@media screen and (max-width: 1250px) {
+    body {
+        grid-template:
+            "header" 120px
+            "......" 20px
+            "center" 1fr
+            "......" 5%
+            "footer" 300px;
+    }
+
+}
+*/
