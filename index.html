@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>bingoで遊ぼう！ -自作ビンゴを簡単に作れるサイト-</title>
+        <link rel="stylesheet" href="3x3.css" />
+    </head>
+    <body>
+      <header>bingoで遊ぼう！<br>
+        <a href="4x4.html">4x4で遊びたい方はコチラ</a>
+      </header>
+      <main><table class="table" id="table1">
+  <tbody>
+    <tr>
+      <td><textarea id="a1" class="a"></textarea></td>
+      <td><textarea id="a2" class="a"></textarea></td>
+      <td><textarea id="a3" class="a"></textarea></td>
+    </tr>
+    <tr>
+      <td><textarea id="b1" class="b"></textarea></td>
+      <td><textarea id="b2" class="b"></textarea></td>
+      <td><textarea id="b3" class="b"></textarea></td>
+    </tr>
+    <tr>
+      <td><textarea id="c1" class="c"></textarea></td>
+      <td><textarea id="c2" class="c"></textarea></td>
+      <td><textarea id="c3" class="c"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+ <button type="button" class="btn btn--orange" onclick="button()"><a href="#table2">ビンゴ作成に進む(下に表示)</a></button>
+
+<table class="table" id="table2">
+  <tbody>
+    <tr>
+      <td id="A1" class="a" onclick="visiblea1()"></td>
+      <td bgcolor="#e3f0fb" id="A2" class="a" onclick="visiblea2()"></td>
+      <td id="A3" class="a" onclick="visiblea3()"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#e3f0fb" id="B1" class="b" onclick="visibleb1()"></td>
+      <td id="B2" class="b" onclick="visibleb2()"></td>
+      <td bgcolor="#e3f0fb" id="B3" class="b" onclick="visibleb3()"></td>
+    </tr>
+    <tr>
+      <td id="C1" class="c" onclick="visiblec1()"></td>
+      <td bgcolor="#e3f0fb" id="C2" class="c" onclick="visiblec2()"></td>
+      <td id="C3" class="c" onclick="visiblec3()"></td>
+    </tr>
+  </tbody>
+</table>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p></p>
+</main>
+      <footer></footer>
+      <script src="3x3.js"></script>
+    </body>
+</html>
